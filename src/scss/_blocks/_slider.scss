@@ -1,0 +1,15 @@
+.slider__item {
+    position: relative;
+}
+.slider__content {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    padding: 20px 30px;
+    color: #ffffff;
+    background-color: rgba(#d2a66b, 0.88);
+}
+.slider__text {
+    font-size: 43px;
+    line-height: 48px;
+}

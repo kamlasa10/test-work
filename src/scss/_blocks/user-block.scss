@@ -1,0 +1,64 @@
+.user-block__item {
+    position: relative;
+    margin-right: rem(10px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.user-block__link {
+    display: block;
+    font-size: rem(16px);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #252a54;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.user-block__basket {
+    position: relative;
+    padding-left: rem(60px);
+    font-size: rem(14px);
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: rem(-8px);
+        top: rem(1px);
+        width: rem(23px);
+        height: rem(23px);
+        background: url("../images/basket.png") no-repeat;
+    }
+}
+.user-block__basket-quantity {
+    position: absolute;
+    left: rem(28px);
+    top: rem(3px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(23px);
+    height: rem(21px);
+    font-size: rem(14px);
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #cb944c;
+    border-radius: 50%;
+}
+.user-block__login {
+    position: relative;
+    padding-left: rem(30px);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: rem(5px);
+        left: rem(1px);
+        width: rem(19px);
+        height: rem(17px);
+        background: url("../images/user-icon.png") no-repeat;
+    }
+}

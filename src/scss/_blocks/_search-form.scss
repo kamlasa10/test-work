@@ -1,0 +1,30 @@
+.search-form {
+    position: relative;
+}
+.search-form__input {
+    width: rem(496px);
+    padding: rem(10px) rem(9px);
+    padding-right: rem(30px);
+    border: rem(1px) solid #b9b8bd;
+    border-radius: rem(4px);
+
+    @include placeholder {
+        color: #b9b8bd;
+        font-size: rem(14px);
+    }
+
+    @include tablets {
+        width: rem(280px);
+    }
+}
+.search-form__button {
+    right: rem(10px);
+    top: rem(11px);
+    position: absolute;
+    width: rem(18px);
+    height: rem(18px);
+    background-color: transparent;
+    background: url("../images/loupe.png") no-repeat;
+    border: none;
+    cursor: pointer;
+}

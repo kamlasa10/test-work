@@ -1,0 +1,25 @@
+.contacts__row {
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts__phone {
+    font-size: rem(23px);
+    color: #181616;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.contacts__content {
+    margin-left: rem(20px);
+}
+.contacts__text {
+    font-size: rem(14px);
+    line-height: rem(14px);
+    white-space: nowrap;
+
+    &--color_orange {
+        color: #cb944c;;
+    }
+}

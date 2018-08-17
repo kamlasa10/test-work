@@ -1,0 +1,10 @@
+.logo {
+    margin-top: rem(30px);
+
+    @include tablets {
+        max-width: rem(179px)
+    }
+}
+.logo__desc {
+    font-size: rem(14px);
+}
