@@ -5,11 +5,42 @@
     position: absolute;
     top: 25%;
     left: 10%;
-    padding: 20px 30px;
+    padding: rem(20px) rem(30px);
     color: #ffffff;
     background-color: rgba(#d2a66b, 0.88);
+
+    @include tablets {
+        top: 15%;
+        left: 9%;
+    }
+}
+.slider__img-pic {
+    @include phones {
+        height: 0;
+        overflow: hidden;
+    }
+}
+.slider__img-phone {
+    display: none;
+
+    @include phones {
+        display: block;
+    }
+}
+.slider__img {
+
+    @include phones {
+        background: url("../images/slider-img-phone.jpg") no-repeat;
+        width: 100%;
+        min-height: rem(124px);
+        z-index: 5;
+    }
 }
 .slider__text {
-    font-size: 43px;
-    line-height: 48px;
+    font-size: rem(43px);
+    line-height: rem(48px);
+
+    @include tablets {
+        font-size: rem(30px);
+    }
 }

@@ -1,8 +1,8 @@
-@import "_plugin-style/**/*.scss";
-
 @import "_setting/_variables.scss";
 @import "_setting/_mixin.scss";
 @import "_setting/fonts.scss";
 @import "_setting/basic.scss";
+
+@import "_plugin-style/**/*.scss";
 
 @import "_blocks/*.scss";

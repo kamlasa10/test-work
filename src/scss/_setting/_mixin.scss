@@ -7,6 +7,11 @@
 @function rem($size) {
   @return $size / 16px * 1rem;
 }
+@mixin desktop {
+  @media screen and (max-width: 992px){
+    @content;
+  }
+}
 @mixin tablets {
   @media screen and (max-width: $tablets){
     @content;

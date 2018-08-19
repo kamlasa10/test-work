@@ -1,3 +1,15 @@
+.user-block {
+   @include tablets {
+       display: none;
+   }
+}
+.user-block--pos_top {
+    display: none;
+    @include tablets {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
 .user-block__item {
     position: relative;
     margin-right: rem(10px);

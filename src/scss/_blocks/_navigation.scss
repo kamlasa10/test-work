@@ -1,6 +1,10 @@
 .navigation {
     width: 70%;
     margin-right: auto;
+
+    @include tablets {
+        width: 100%;
+    }
 }
 .navigation__list {
     display: flex;
@@ -75,7 +79,7 @@
     position: absolute;
     top: rem(45px);
     left: rem(-20px);
-    z-index: 10;
+    z-index: 100;
     width: rem(244px);
     margin: 0;
     padding: 0;
@@ -85,6 +89,10 @@
     border: 1px solid #dddfdf;
     border-radius: 3px;
     box-shadow: 2px 3px 1px rgba(108, 104, 104, 0.33);
+
+    @include tablets {
+        left: rem(5px);
+    }
 }
 .navigation__dropdown-item {
     position: relative;

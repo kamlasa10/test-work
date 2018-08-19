@@ -4,6 +4,10 @@
 .header__top {
     padding-bottom: 15px;
     border-bottom: 1px solid #dddfdf;
+
+    @include phones {
+        display: none;
+    }
 }
 .header__top-row {
     justify-content: space-between;
@@ -13,4 +17,8 @@
     padding-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #dddfdf;
+
+    @include phones {
+        display: none;
+    }
 }
