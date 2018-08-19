@@ -4,6 +4,11 @@
     @include tablets {
         max-width: rem(179px)
     }
+    @include phones {
+        margin-top: rem(20px);
+        margin-bottom: rem(20px);
+        margin-left: rem(10px);
+    }
 }
 .logo__desc {
     font-size: rem(14px);

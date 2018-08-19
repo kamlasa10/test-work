@@ -13,27 +13,16 @@
         top: 15%;
         left: 9%;
     }
+
+    @include phones {
+        padding: rem(8px) rem(10px);
+        top: 30%;
+    }
 }
 .slider__img-pic {
     @include phones {
         height: 0;
         overflow: hidden;
-    }
-}
-.slider__img-phone {
-    display: none;
-
-    @include phones {
-        display: block;
-    }
-}
-.slider__img {
-
-    @include phones {
-        background: url("../images/slider-img-phone.jpg") no-repeat;
-        width: 100%;
-        min-height: rem(124px);
-        z-index: 5;
     }
 }
 .slider__text {
@@ -42,5 +31,19 @@
 
     @include tablets {
         font-size: rem(30px);
+    }
+
+    @include phones {
+        font-size: rem(15px);
+        line-height: rem(18px)
+    }
+}
+.slider__img-phone {
+    height: 0;
+    overflow: hidden;
+
+    @include phones {
+        height: auto;
+        overflow: visible;
     }
 }

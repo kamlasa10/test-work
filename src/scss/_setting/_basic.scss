@@ -39,6 +39,10 @@ body {
   max-width: 1215px;
   margin: 0 auto;
   padding: 0 10px;
+
+  @include phones {
+    padding: 0;
+  }
 }
 .row {
   display: flex;

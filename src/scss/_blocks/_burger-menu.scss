@@ -1,0 +1,84 @@
+.burger-menu__block {
+    padding: rem(15px) rem(20px);
+    padding-top: rem(5px);
+    background-color: #3eade2;
+}
+.burger-menu-btn {
+    position: relative;
+    width: rem(20px);
+    height: rem(3px);
+    font-size: 0;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    background-color: #f0f1f6;
+    border-radius: rem(3px);
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: rem(20px);
+        height: rem(3px);
+        background-color: #f0f1f6;
+        border-radius: rem(3px);
+    }
+    &::before {
+        top: rem(-8px);
+    }
+    &::after {
+        top: rem(8px);
+    }
+}
+.burger-menu__list {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding: rem(12px) 0;
+    padding-left: rem(18px);
+    list-style-type: none;
+    background-color: #f0f1f6;
+}
+.burger-menu__item {
+    margin-right: rem(60px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.burger-menu__link {
+    position: relative;
+}
+.burger-menu__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.burger-menu__icon--home {
+    width: rem(24px);
+    height: rem(20px);
+    background: url("../images/icon-home.png") no-repeat;
+}
+.burger-menu__icon--search {
+    width: rem(20px);
+    height: rem(20px);
+    background: url("../images/icon-search.png") no-repeat;
+}
+.burger-menu__icon--basket {
+    width: rem(21px);
+    height: rem(21px);
+    background: url("../images/icon-basket.png") no-repeat;
+}
+.burger-menu__icon--user-icon {
+    width: rem(23px);
+    height: rem(20px);
+    background: url("../images/icon-user.png") no-repeat;
+}
+.burger-menu__icon--phone {
+    width: rem(23px);
+    height: rem(21px);
+    background: url("../images/icon-phone.png") no-repeat;
+}
