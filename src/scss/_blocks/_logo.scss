@@ -1,3 +1,10 @@
+.hidden {
+    display: none;
+
+    @include phones {
+        display: block;
+    }
+}
 .logo {
     margin-top: rem(30px);
 

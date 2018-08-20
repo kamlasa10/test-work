@@ -1,3 +1,10 @@
+.burger-menu {
+    display: none;
+
+    @include phones {
+        display: block;
+    }
+}
 .burger-menu__block {
     padding: rem(15px) rem(20px);
     padding-top: rem(5px);
